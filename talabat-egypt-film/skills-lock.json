@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "skills": {
+    "product-launch-motion": {
+      "source": "AbubakrChan/product-launch-motion",
+      "commit": "edbfb105382f21507bad895d8b5f6e0faa67487c",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "863af78305db6f7baccf3435df52f2c6c4013c22fa60eb3655738db991c2eba9"
+    },
+    "product-launch-motion-v1": {
+      "source": "AbubakrChan/product-launch-motion",
+      "commit": "edbfb105382f21507bad895d8b5f6e0faa67487c",
+      "sourceType": "github",
+      "skillPath": "legacy/SKILL.md",
+      "computedHash": "f3f63bd8a8ca4d142a8d256423ebbcc17f30292ddc8a737a21da8f1d1f9478ff"
+    }
+  }
+}

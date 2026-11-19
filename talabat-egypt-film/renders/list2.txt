@@ -1,0 +1,4 @@
+file 'seg/v_draft_0_15.mp4'
+file 'seg/v_draft_15_30.mp4'
+file 'seg/v_draft_30_45_v2.mp4'
+file 'seg/v_draft_45_60.mp4'

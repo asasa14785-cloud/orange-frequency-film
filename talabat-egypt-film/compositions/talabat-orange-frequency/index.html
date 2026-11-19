@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<title>Talabat Egypt — The Orange Frequency (60s)</title>
+<script src="lib/gsap.min.js"></script>
+<script src="lib/motion.js"></script>
+<script src="lib/ui_kit.js"></script>
+<script src="cues.js"></script>
+<style>
+@font-face{font-family:'Cairo';src:url('assets/fonts/Cairo.ttf');font-weight:200 1000;font-style:normal}
+:root{--orange:#FF5A00;--cream:#F4EDE3;--ink:#220402;--lilac:#EBE8FD;--pro:#7B3FE4;--ground:#0c0403}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1920px;height:1080px;overflow:hidden;background:var(--ground);font-family:'Cairo',sans-serif}
+#root{position:absolute;left:0;top:0;width:1920px;height:1080px;overflow:hidden;background:var(--ground)}
+.scene{position:absolute;left:0;top:0;width:1920px;height:1080px;overflow:hidden;display:none}
+.world{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:0 0}
+.c{position:absolute;left:0;top:0;transform-origin:50% 50%;will-change:transform}
+.rtl{direction:rtl;white-space:nowrap}
+.abs{position:absolute}
+img{display:block}
+/* ---------- S1 ---------- */
+#s1{background:radial-gradient(ellipse at 50% 50%,#1a0803 0%,#0c0403 60%,#050201 100%)}
+#floorp{position:absolute;left:0;top:560px;width:1920px;height:520px;perspective:520px;overflow:hidden;-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 55%);mask-image:linear-gradient(to bottom,transparent 0,#000 55%)}
+#floor{position:absolute;left:-1040px;top:0;width:4000px;height:3200px;transform-origin:50% 0;transform:rotateX(74deg);
+ background-image:repeating-linear-gradient(0deg,rgba(255,90,0,.75) 0 3px,transparent 3px 120px),repeating-linear-gradient(90deg,rgba(255,90,0,.55) 0 3px,transparent 3px 120px)}
+#glow{width:1500px;height:1500px;border-radius:50%;background:radial-gradient(circle,rgba(255,90,0,.55) 0%,rgba(255,90,0,.18) 38%,transparent 68%)}
+.ring{width:1000px;height:1000px;border-radius:50%;border:4px solid var(--orange)}
+#icon{border-radius:22.4%;overflow:hidden;background:var(--orange);box-shadow:0 40px 120px rgba(255,90,0,.45)}
+#icon img{width:100%;height:100%}
+.s1w{font-weight:900;font-size:128px;color:var(--cream);letter-spacing:-1px}
+.s1w span{display:inline-block;margin:0 14px}
+/* ---------- orange rays ---------- */
+.rays{position:absolute;left:0;top:0;width:1920px;height:1080px}
+/* ---------- phone ---------- */
+.phoneP{perspective:1600px;width:460px;height:940px}
+.phone{position:relative;width:460px;height:940px;border-radius:72px;background:var(--ink);padding:12px;box-shadow:0 50px 120px rgba(34,4,2,.5);transform-style:preserve-3d}
+.screen{position:relative;width:436px;height:916px;border-radius:60px;background:#fff;overflow:hidden;direction:rtl}
+.hdr{position:absolute;left:0;top:0;width:436px;height:262px;background:var(--orange);border-radius:0 0 34px 34px}
+.hdr .lbl{position:absolute;right:24px;top:52px;color:rgba(255,255,255,.85);font-size:15px;font-weight:600}
+.hdr .loc{position:absolute;right:24px;top:72px;color:#fff;font-size:22px;font-weight:800}
+.sbar{position:absolute;left:18px;top:120px;width:400px;height:58px;border-radius:29px;background:#fff;box-shadow:0 6px 20px rgba(34,4,2,.18);display:flex;align-items:center;padding:0 18px;gap:12px;border:3px solid transparent}
+.sbar svg{flex:none}
+.sbar .ph{position:absolute;right:56px;top:11px;font-size:20px;font-weight:600;color:#9a8f86}
+.sbar .tx{position:absolute;right:56px;top:9px;font-size:24px;font-weight:800;color:var(--ink)}
+.tile{position:absolute;top:276px;width:92px;height:112px;text-align:center}
+.tile .ib{width:84px;height:84px;margin:0 auto;border-radius:26px;background:var(--cream);display:flex;align-items:center;justify-content:center}
+.tile .tl{margin-top:6px;font-size:15px;font-weight:800;color:var(--ink);line-height:1.1}
+.tile .badge{position:absolute;right:6px;top:-8px;background:var(--ink);color:#fff;font-size:11px;font-weight:800;padding:1px 7px;border-radius:8px}
+.banner{position:absolute;left:18px;top:410px;width:400px;height:190px;border-radius:26px;overflow:hidden;background:#222}
+.banner .bi{position:absolute;inset:0;background:url(assets/img/grocery_flatlay.jpg) 50% 62%/cover}
+.banner .bs{position:absolute;inset:0;background:linear-gradient(270deg,rgba(34,4,2,.85) 0,rgba(34,4,2,.55) 45%,transparent 80%)}
+.banner .bt{position:absolute;right:22px;top:34px;color:#fff;font-size:28px;font-weight:900;line-height:1.2;width:230px}
+.banner .bt b{color:var(--orange)}
+.sec{position:absolute;right:22px;top:622px;font-size:22px;font-weight:900;color:var(--ink)}
+.rc{position:absolute;top:668px;width:190px;height:210px;border-radius:22px;overflow:hidden;background:#f3ece4}
+.rc .ri{width:100%;height:120px;background-size:cover}
+.rc .l1{margin:12px 12px 0;height:14px;border-radius:7px;background:#e3d9cf;width:70%}
+.rc .l2{margin:10px 12px 0;height:10px;border-radius:5px;background:#eee5dc;width:45%}
+/* ---------- plate / card ---------- */
+.plate{position:absolute;overflow:hidden;background:#000;box-shadow:0 70px 140px rgba(0,0,0,.6),0 0 0 6px rgba(255,255,255,.06)}
+.plate img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;filter:contrast(1.08) saturate(1.12)}
+.plate .shade{position:absolute;inset:0;background:radial-gradient(circle at 35% 25%,rgba(255,255,255,.14),transparent 45%),radial-gradient(circle at 50% 50%,transparent 62%,rgba(0,0,0,.45) 100%)}
+.plate .cl{position:absolute;right:26px;bottom:24px;color:#fff;font-weight:900;font-size:34px;text-shadow:0 4px 18px rgba(0,0,0,.6)}
+#s3{background:radial-gradient(ellipse at 50% 55%,#2a0d05 0%,#140603 60%,#090302 100%)}
+.bigword{position:absolute;white-space:nowrap;direction:rtl;font-weight:900;color:transparent;-webkit-text-stroke:3px rgba(255,90,0,.38);font-size:430px;line-height:1}
+.steam{position:absolute;border-radius:50%;background:rgba(255,255,255,.55);filter:blur(22px)}
+.kt{position:absolute;direction:rtl;font-weight:900;color:var(--cream);font-size:88px;line-height:1.12;white-space:nowrap}
+.kt span{display:inline-block;margin:0 10px}
+.kt em{font-style:normal;color:var(--orange)}
+/* ---------- S4 ---------- */
+#s4{background:var(--orange)}
+.cover{position:absolute;left:0;top:0;width:436px;height:236px;background:url(assets/img/pizza_box_hands.jpg) 50% 40%/cover}
+.cover:after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(34,4,2,.35),transparent 60%)}
+.rname{position:absolute;right:22px;top:250px;font-size:28px;font-weight:900;color:var(--ink)}
+.rsub{position:absolute;right:22px;top:290px;font-size:15px;font-weight:600;color:#8a7f76}
+.chip{position:absolute;top:322px;padding:3px 12px;border-radius:14px;background:var(--cream);font-size:13px;font-weight:800;color:var(--ink)}
+.item{position:absolute;left:0;width:436px;height:124px}
+.item .ph{position:absolute;right:20px;top:6px;width:108px;height:108px;border-radius:18px;background-size:cover}
+.item .t{position:absolute;right:140px;top:12px;font-size:20px;font-weight:900;color:var(--ink);width:190px;line-height:1.2}
+.item .d{position:absolute;right:140px;top:70px;height:10px;width:140px;border-radius:5px;background:#eee5dc}
+.item .d2{position:absolute;right:140px;top:88px;height:10px;width:90px;border-radius:5px;background:#f2ebe3}
+.item .plus{position:absolute;left:24px;top:62px;width:46px;height:46px;border-radius:23px;background:#fff;border:2.5px solid var(--orange);color:var(--orange);font-size:34px;font-weight:700;text-align:center;line-height:38px;box-shadow:0 4px 14px rgba(34,4,2,.12)}
+.basketbar{position:absolute;left:18px;top:836px;width:400px;height:66px;border-radius:33px;background:var(--orange);color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 26px;font-size:22px;font-weight:900;box-shadow:0 12px 30px rgba(255,90,0,.45)}
+.basketbar .cnt{width:36px;height:36px;border-radius:18px;background:#fff;color:var(--orange);text-align:center;line-height:36px;font-size:20px;font-weight:900}
+.sheet{position:absolute;left:0;top:300px;width:436px;height:616px;background:#fff;border-radius:34px 34px 0 0;box-shadow:0 -20px 60px rgba(34,4,2,.25)}
+.sheet .st{position:absolute;right:26px;top:26px;font-size:28px;font-weight:900;color:var(--ink)}
+.srow{position:absolute;left:22px;width:392px;height:78px;border-radius:20px;background:var(--cream);}
+.srow .k{position:absolute;right:20px;top:12px;font-size:15px;font-weight:700;color:#8a7f76}
+.srow .v{position:absolute;right:20px;top:36px;font-size:20px;font-weight:900;color:var(--ink)}
+.srow .ic{position:absolute;left:18px;top:21px;width:36px;height:36px;border-radius:18px;background:var(--orange)}
+.confirm{position:absolute;left:22px;top:526px;width:392px;height:66px;border-radius:33px;background:var(--orange);color:#fff;font-size:24px;font-weight:900;text-align:center;line-height:66px;box-shadow:0 10px 26px rgba(255,90,0,.4)}
+.thumb{position:absolute;width:64px;height:64px;border-radius:14px;background-size:cover;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.chipf{position:absolute;width:150px;height:150px;border-radius:26px;background-size:cover;box-shadow:0 20px 60px rgba(34,4,2,.4);border:5px solid var(--cream)}
+/* ---------- S5 ---------- */
+#s5{background:#140603}
+.wd{position:absolute;width:1920px;height:1080px;overflow:hidden}
+.wd .ttl{position:absolute;direction:rtl;font-weight:900;white-space:nowrap;line-height:1}
+.wd .sub{position:absolute;direction:rtl;font-weight:700;white-space:nowrap}
+.ph3{position:absolute;width:400px;border-radius:44px;border:10px solid var(--ink);background:var(--ink);overflow:hidden;box-shadow:0 50px 100px rgba(0,0,0,.45)}
+.ph3 img{width:100%;display:block}
+/* ---------- S6 ---------- */
+#s6{background:#160a07}
+#persp{position:absolute;left:0;top:0;width:1920px;height:1080px;perspective:1150px;perspective-origin:50% 38%;overflow:hidden}
+#plane{position:absolute;left:960px;top:760px;width:0;height:0;transform-style:preserve-3d}
+#city{position:absolute;left:0;top:0;width:0;height:0;transform-style:preserve-3d}
+.bld{position:absolute;transform-style:preserve-3d}
+.bf{position:absolute;backface-visibility:hidden}
+#sky{position:absolute;left:0;top:0;width:1920px;height:560px;background:linear-gradient(to bottom,#1d0b07 0,#5a210d 60%,#d9622a 100%)}
+.trk{position:absolute;right:120px;top:70px;width:560px;height:230px;border-radius:34px;background:rgba(244,237,227,.96);direction:rtl;box-shadow:0 30px 80px rgba(0,0,0,.4)}
+.trk .h{position:absolute;right:30px;top:20px;font-size:34px;font-weight:900;color:var(--ink)}
+.stp{position:absolute;top:96px;width:120px;text-align:center}
+.stp .dot{width:44px;height:44px;border-radius:22px;margin:0 auto;background:#ddd2c6;color:#fff;font-size:26px;font-weight:900;line-height:44px}
+.stp .nm{margin-top:10px;font-size:19px;font-weight:800;color:var(--ink);line-height:1.15}
+.trkline{position:absolute;right:76px;top:117px;width:408px;height:6px;border-radius:3px;background:#ddd2c6}
+.trkfill{position:absolute;right:76px;top:117px;height:6px;border-radius:3px;background:var(--orange);width:0}
+/* ---------- S7 / S8 ---------- */
+#s7{background:radial-gradient(ellipse at 50% 45%,#3a1408 0,#160704 55%,#070201 100%)}
+#beam{position:absolute;left:660px;top:-80px;width:600px;height:700px;background:linear-gradient(to bottom,rgba(255,196,140,.0),rgba(255,196,140,.35));clip-path:polygon(35% 100%,65% 100%,100% 0,0 0);filter:blur(12px);transform-origin:50% 100%}
+.pk{position:absolute;background:var(--orange);overflow:hidden}
+#s8{background:var(--cream)}
+.ink{color:var(--ink)}
+.fin{position:absolute;direction:rtl;font-weight:900;font-size:100px;color:var(--ink);white-space:nowrap;line-height:1.1}
+.fin span{display:inline-block;margin:0 12px}
+.fin .u{color:var(--orange)}
+/* ---------- cursor & overlays ---------- */
+#cursor{position:absolute;left:0;top:0;width:60px;height:70px;transform-origin:0 0;filter:drop-shadow(0 8px 10px rgba(0,0,0,.45));display:none}
+#irisRing{position:absolute;border-radius:50%;border:14px solid var(--orange);display:none;pointer-events:none}
+#grain{position:absolute;left:-40px;top:-40px;width:2000px;height:1160px;background:url(assets/img/grain.png);opacity:.07;mix-blend-mode:overlay;pointer-events:none}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,transparent 55%,rgba(0,0,0,.42) 100%);pointer-events:none}
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="talabat-orange-frequency" data-start="0" data-duration="60" data-width="1920" data-height="1080">
+<audio id="mix" src="assets/audio/mix.wav" data-start="0" data-duration="60" data-track-index="9" data-volume="1"></audio>
+
+<!-- ============ S1 THE SIGNAL ============ -->
+<div id="s1" class="scene">
+  <div id="s1w" class="world">
+    <div id="floorp"><div id="floor"></div></div>
+    <div id="glow" class="c"></div>
+    <div id="r0" class="c ring"></div><div id="r1" class="c ring"></div><div id="r2" class="c ring"></div>
+    <div id="icon" class="c"><img src="assets/img/icon.png" alt="talabat"></div>
+  </div>
+  <div id="s1tw" class="world"><div id="s1t" class="c s1w rtl"><span>كل</span><span>حاجة</span><span>بتبدأ</span><span>برغبة.</span></div></div>
+</div>
+
+<!-- ============ S2 INSIDE THE APP ============ -->
+<div id="s2" class="scene" style="background:#FF5A00">
+  <div id="s2w" class="world">
+    <svg id="rays" class="rays" viewBox="0 0 1920 1080"></svg>
+    <div id="phoneP" class="c phoneP">
+      <div id="phone" class="phone"><div class="screen">
+        <div class="hdr"><div class="lbl">التوصيل إلى</div><div class="loc">موقعك الحالي ⌄</div></div>
+        <div id="sbar" class="sbar">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FF5A00" stroke-width="3" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="7"/><path d="M16 16l5 5"/></svg>
+          <div id="ph" class="ph">ابحث عن مطاعم وبقالة وأكتر</div><div id="tx" class="tx"></div>
+        </div>
+        <div id="tiles"></div>
+        <div id="ban" class="banner"><div class="bi"></div><div class="bs"></div><div class="bt">أساسياتك اليومية <b>بأسعار مميزة</b></div></div>
+        <div class="sec">مطاعم ممكن تحبها</div>
+        <div class="rc" style="right:18px"><div class="ri" style="background-image:url(assets/img/pizza_box_hands.jpg);background-position:30% 40%"></div><div class="l1"></div><div class="l2"></div></div>
+        <div class="rc" style="right:222px"><div class="ri" style="background-image:url(assets/img/poke_bowl.jpg);background-position:50% 50%"></div><div class="l1"></div><div class="l2"></div></div>
+      </div></div>
+    </div>
+    <div id="s2cur"></div>
+  </div>
+</div>
+
+<!-- ============ S3 FOOD (ground + typography) ============ -->
+<div id="s3" class="scene">
+  <div id="s3w" class="world">
+    <div id="bw1" class="bigword" style="top:230px">نفسك في إيه؟</div>
+    <div id="bw2" class="bigword" style="top:610px">نفسك في إيه؟</div>
+  </div>
+</div>
+<!-- plates live above S3 ground and below S4 -->
+<div id="pl" class="scene" style="overflow:visible">
+  <div id="plw" class="world">
+    <svg id="orbit" class="abs" style="left:0;top:0" width="1920" height="1080" viewBox="0 0 1920 1080"></svg>
+    <div id="p0" class="plate"><img src="assets/img/pizza_box_hands.jpg" alt=""><div class="shade"></div><div id="p0l" class="cl rtl">المطاعم</div></div>
+    <div id="p1" class="plate"><img src="assets/img/poke_bowl.jpg" alt=""><div class="shade"></div></div>
+    <div id="steam"></div>
+  </div>
+  <div id="ktw" class="world">
+    <div id="kt1" class="kt" style="left:1290px;top:350px;width:510px"><span>ومهما</span><span>كان</span><br><span>نفسك</span><span>في</span><em>إيه</em></div>
+    <div id="kt2" class="kt" style="left:110px;top:350px;width:510px"><span>اختياره</span><br><em>بقى</em><span>أسهل.</span></div>
+  </div>
+</div>
+
+<!-- ============ S4 THE ORDER ============ -->
+<div id="s4" class="scene">
+  <div id="s4w" class="world">
+    <svg id="rays4" class="rays" viewBox="0 0 1920 1080"></svg>
+    <div id="phone2P" class="c phoneP">
+      <div id="phone2" class="phone"><div class="screen">
+        <div class="cover"></div>
+        <div class="rname">مطعمك المفضل</div><div class="rsub">بيتزا · وجبات · سلطات</div>
+        <div class="chip" style="right:22px">الأكثر طلباً</div><div class="chip" style="right:128px">وجبات</div>
+        <div id="it0" class="item" style="top:368px"><div class="ph" style="background-image:url(assets/img/pizza_box_hands.jpg);background-position:30% 45%"></div><div class="t">بيتزا بيبروني</div><div class="d"></div><div class="d2"></div><div id="pl0" class="plus">+</div></div>
+        <div id="it1" class="item" style="top:506px"><div class="ph" style="background-image:url(assets/img/poke_bowl.jpg);background-position:50% 55%"></div><div class="t">بول سلمون طازج</div><div class="d"></div><div class="d2"></div><div id="pl1" class="plus">+</div></div>
+        <div class="item" style="top:644px"><div class="ph" style="background:#eee5dc"></div><div class="t" style="color:#cdbfb2">· · ·</div><div class="d"></div><div class="d2"></div></div>
+        <div id="bbar" class="basketbar"><span>عرض السلة</span><span id="bcnt" class="cnt">1</span></div>
+        <div id="sheet" class="sheet"><div class="st">إتمام الطلب</div>
+          <div class="srow" style="top:84px"><div class="k">عنوان التوصيل</div><div class="v">موقعك الحالي</div><div class="ic"></div></div>
+          <div class="srow" style="top:176px"><div class="k">طريقة الدفع</div><div class="v">اختار طريقة الدفع</div><div class="ic" style="background:var(--ink)"></div></div>
+          <div class="srow" style="top:268px;height:120px"><div class="k">طلبك</div><div class="thumb" style="right:20px;top:42px;box-shadow:none;background-image:url(assets/img/pizza_box_hands.jpg);background-position:30% 45%"></div><div class="thumb" style="right:96px;top:42px;box-shadow:none;background-image:url(assets/img/poke_bowl.jpg);background-position:50% 55%"></div></div>
+          <div id="conf" class="confirm">تأكيد الطلب</div>
+        </div>
+      </div></div>
+    </div>
+    <div id="fly0" class="thumb" style="background-image:url(assets/img/pizza_box_hands.jpg);background-position:30% 45%;display:none"></div>
+    <div id="fly1" class="thumb" style="background-image:url(assets/img/poke_bowl.jpg);background-position:50% 55%;display:none"></div>
+    <div id="okc" class="c" style="width:200px;height:200px;border-radius:100px;background:var(--cream);display:none"><svg width="200" height="200" viewBox="0 0 200 200" fill="none" stroke="#FF5A00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"><path id="okp" d="M58 104l30 30 56-66" stroke-dasharray="170" stroke-dashoffset="170"/></svg></div>
+    <div id="chips"></div>
+    <div id="s4cur"></div>
+  </div>
+</div>
+
+<!-- ============ S5 MORE THAN FOOD ============ -->
+<div id="s5" class="scene">
+  <div id="s5w" class="world"></div>
+</div>
+
+<!-- ============ S6 THE JOURNEY ============ -->
+<div id="s6" class="scene">
+  <div id="sky"></div>
+  <div id="persp"><div id="plane"><div id="city"></div></div></div>
+  <div id="trk" class="trk">
+    <div class="h">تابع طلبك خطوة بخطوة</div>
+    <div class="trkline"></div><div id="trkfill" class="trkfill"></div>
+    <div id="stp0" class="stp" style="right:16px"><div class="dot">✓</div><div class="nm">تم تأكيد<br>الطلب</div></div>
+    <div id="stp1" class="stp" style="right:150px"><div class="dot">✓</div><div class="nm">بيتحضّر</div></div>
+    <div id="stp2" class="stp" style="right:284px"><div class="dot">✓</div><div class="nm">في الطريق<br>ليك</div></div>
+    <div id="stp3" class="stp" style="right:418px"><div class="dot">✓</div><div class="nm">وصل</div></div>
+  </div>
+  <div id="streaks" class="abs" style="left:0;top:0;width:1920px;height:1080px"></div>
+</div>
+
+<!-- ============ S7 THE ARRIVAL ============ -->
+<div id="s7" class="scene">
+  <div id="s7w" class="world">
+    <div id="beam"></div>
+    <div id="hero" class="plate" style="border-radius:50%"><img src="assets/img/poke_bowl.jpg" alt=""><div class="shade"></div></div>
+    <div id="heroRim" class="abs" style="border-radius:50%"></div>
+    <div id="s7steam"></div>
+    <div id="pkBody" class="pk"><img src="assets/img/icon.png" style="position:absolute;left:150px;top:70px;width:120px;height:120px;border-radius:27px"><div class="abs" style="left:0;right:0;bottom:0;height:34px;background:rgba(34,4,2,.18)"></div></div>
+    <div id="pkLid" class="pk" style="background:#e04f00"></div>
+    <div id="arr" class="fin" style="font-size:150px;color:var(--cream)"><span>وصلت.</span></div>
+  </div>
+</div>
+
+<!-- ============ S8 FINAL ============ -->
+<div id="s8" class="scene">
+  <div id="s8w" class="world">
+    <div id="s8cover" class="abs" style="background:var(--orange)"></div>
+    <div id="s8icon" class="abs" style="border-radius:22.4%;overflow:hidden"><img src="assets/img/icon.png" style="width:100%;height:100%"></div>
+    <img id="s8wm" class="abs" src="assets/img/wordmark.png" style="width:380px;height:140px;mix-blend-mode:multiply">
+    <div id="s8t" class="fin"><span>طلبات...</span><span>كل</span><span>يوم</span><span class="u">أسهل.</span></div>
+    <div id="s8u" class="abs" style="height:12px;border-radius:6px;background:var(--orange)"></div>
+  </div>
+</div>
+
+<div id="cursor"><svg width="60" height="70" viewBox="0 0 60 70"><path d="M3 3 L3 52 L16 40 L25 61 L35 56 L26 36 L44 36 Z" fill="#fff" stroke="#220402" stroke-width="5" stroke-linejoin="round"/></svg></div>
+<div id="irisRing"></div>
+<div id="vig"></div>
+<div id="grain"></div>
+</div>
+<script src="film.js"></script>
+</body>
+</html>

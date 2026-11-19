@@ -1,0 +1,944 @@
+{
+  "version": 1,
+  "historyId": "5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5",
+  "currentRevision": "dd79c85b-6cd2-4a6c-9c15-50d0e561a866",
+  "pendingChanges": false,
+  "files": {
+    "AGENTS.md": {
+      "hash": "729e31835a21c7b42ee006e2aacc63016abc05d26883f871ad3bf206943f2cfb",
+      "content": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/72/729e31835a21c7b42ee006e2aacc63016abc05d26883f871ad3bf206943f2cfb"
+    },
+    "CLAUDE.md": {
+      "hash": "729e31835a21c7b42ee006e2aacc63016abc05d26883f871ad3bf206943f2cfb",
+      "content": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/72/729e31835a21c7b42ee006e2aacc63016abc05d26883f871ad3bf206943f2cfb"
+    },
+    "assets/fonts/Cairo.ttf": {
+      "hash": "667c987182391c91f4e57a2f455b1794fb5e3ee6ca4ef3383e86bb690fa9c964",
+      "content": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/66/667c987182391c91f4e57a2f455b1794fb5e3ee6ca4ef3383e86bb690fa9c964"
+    },
+    "assets/img/grocery_flatlay.jpg": {
+      "hash": "ae2e5c1f720b8715ae64e1cd50b2b824edcf74f23a933ec6d5c9f3e1c4160492",
+      "content": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/ae/ae2e5c1f720b8715ae64e1cd50b2b824edcf74f23a933ec6d5c9f3e1c4160492"
+    },
+    "assets/img/hand_phone.jpg": {
+      "hash": "b7472fd46f135a9d40471207003d19e68d7434e28ea1dc905709715253ea9ad0",
+      "content": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/b7/b7472fd46f135a9d40471207003d19e68d7434e28ea1dc905709715253ea9ad0"
+    },
+    "assets/img/icon.png": {
+      "hash": "45ac5e4f46b72ffd71220b55c4630ed372d5cd13f5d4d966699a066bcdda8999",
+      "content": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/45/45ac5e4f46b72ffd71220b55c4630ed372d5cd13f5d4d966699a066bcdda8999"
+    },
+    "assets/img/pizza_box_hands.jpg": {
+      "hash": "8c9162f751147533dfc5aa93c5ed62358480f96089b564e8dd2f7ee1da84777a",
+      "content": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/8c/8c9162f751147533dfc5aa93c5ed62358480f96089b564e8dd2f7ee1da84777a"
+    },
+    "assets/img/poke_bowl.jpg": {
+      "hash": "d173502aab70759fb246cc7a56482331395a605c00518fb4cdd9faa48b3b7003",
+      "content": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/d1/d173502aab70759fb246cc7a56482331395a605c00518fb4cdd9faa48b3b7003"
+    },
+    "assets/img/ui_ar_fruitveg.jpg": {
+      "hash": "2f9cc1b9f27fb7be68ef19401e97113341f2a522f3db6e54cd8d492afc191a58",
+      "content": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/2f/2f9cc1b9f27fb7be68ef19401e97113341f2a522f3db6e54cd8d492afc191a58"
+    },
+    "assets/img/ui_ar_home.jpg": {
+      "hash": "6fbae99241054658d29322fdc984049b89f6059246961833c8bcd78aae6a0c1e",
+      "content": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/6f/6fbae99241054658d29322fdc984049b89f6059246961833c8bcd78aae6a0c1e"
+    },
+    "assets/img/ui_ar_mart.jpg": {
+      "hash": "d71f4bfc75ff65310d78dc0e50456a1302c0804734c1eebf500aff2ba51f19ec",
+      "content": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/d7/d71f4bfc75ff65310d78dc0e50456a1302c0804734c1eebf500aff2ba51f19ec"
+    },
+    "assets/img/ui_ar_pro_stores.jpg": {
+      "hash": "6fc2545baca9bdc23e46bb8ad706cb1c4cf278dcc75ae2b2fe5b178189aa79ad",
+      "content": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/6f/6fc2545baca9bdc23e46bb8ad706cb1c4cf278dcc75ae2b2fe5b178189aa79ad"
+    },
+    "assets/img/wordmark.png": {
+      "hash": "68c7315aceebc83c0397c58af30484df46fc23fe09f9c5756842f7e54447b04f",
+      "content": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/68/68c7315aceebc83c0397c58af30484df46fc23fe09f9c5756842f7e54447b04f"
+    },
+    "cues.js": {
+      "hash": "98aa6624057894c67e679f398bdc66bfa8135ff95334d5e51659ea8b9579586a",
+      "content": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/98/98aa6624057894c67e679f398bdc66bfa8135ff95334d5e51659ea8b9579586a"
+    },
+    "film.js": {
+      "hash": "ba813ba7c46c96ec030f797976226026348cd44506a4c3b1fe875b24a4660d54",
+      "content": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/ba/ba813ba7c46c96ec030f797976226026348cd44506a4c3b1fe875b24a4660d54"
+    },
+    "hyperframes.json": {
+      "hash": "53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50",
+      "content": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/53/53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50"
+    },
+    "index.html": {
+      "hash": "7abe1e8f45e0ee81fdf95bd4d0dd52353ac995005b8638148405d7ea8877b09b",
+      "content": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/7a/7abe1e8f45e0ee81fdf95bd4d0dd52353ac995005b8638148405d7ea8877b09b"
+    },
+    "lib/gsap.min.js": {
+      "hash": "28033e449a31ebcc396e5be8b13b63152bf03094288fb5867034321927bce087",
+      "content": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/28/28033e449a31ebcc396e5be8b13b63152bf03094288fb5867034321927bce087"
+    },
+    "lib/motion.js": {
+      "hash": "64697ab4df78496ea95999135fe098a9b24bff10d687273fbec193b6cfd1d27e",
+      "content": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/64/64697ab4df78496ea95999135fe098a9b24bff10d687273fbec193b6cfd1d27e"
+    },
+    "lib/ui_kit.js": {
+      "hash": "defca09f3532537c59ce89b55899b977ae31d18d4e2275fe217d63f6afc4ca49",
+      "content": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/de/defca09f3532537c59ce89b55899b977ae31d18d4e2275fe217d63f6afc4ca49"
+    },
+    "meta.json": {
+      "hash": "1045fb9b5d769c683364fde74e233af101b179cd1f2ead705b078d4ef90a3045",
+      "content": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/10/1045fb9b5d769c683364fde74e233af101b179cd1f2ead705b078d4ef90a3045"
+    },
+    "package.json": {
+      "hash": "a694728cbc1ce4000eeb48dd82b88b54cca07bdb855f185876ca63bc6e755678",
+      "content": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/a6/a694728cbc1ce4000eeb48dd82b88b54cca07bdb855f185876ca63bc6e755678"
+    },
+    "assets/audio/mix.wav": {
+      "hash": "1479e597e8b57af9d2ad2f53091cd0c11413a7049a367c6d7e13e4062052bf6d",
+      "content": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/14/1479e597e8b57af9d2ad2f53091cd0c11413a7049a367c6d7e13e4062052bf6d"
+    },
+    "assets/img/grain.png": {
+      "hash": "6f34f9041f73a00aca9d6064e644f264e48153572c8f20915b2b0fd1eee1f7e6",
+      "content": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/6f/6f34f9041f73a00aca9d6064e644f264e48153572c8f20915b2b0fd1eee1f7e6"
+    }
+  },
+  "revisions": {
+    "600e9d78-0996-4d23-8f5d-af12f347940f": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1795027650729,
+      "endedAt": 1795027650730,
+      "files": {
+        "film.js": {
+          "before": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/55/5507a574a3d2ba8612ab4f4cf93bc8e6ab2646cfe84a06b30d848d99be55e186",
+          "after": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/54/54415b2b813ab58ca503df314e02661c0a70cd6e3807e63cf50377ae37c5bdf2"
+        }
+      }
+    },
+    "67d53cb9-da67-4361-bd55-bfab3fe4e1e8": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1795027700343,
+      "endedAt": 1795027700349,
+      "files": {
+        "film.js": {
+          "before": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/54/54415b2b813ab58ca503df314e02661c0a70cd6e3807e63cf50377ae37c5bdf2",
+          "after": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/7b/7b7fea1924cffbfe2de9ca5829476933e32959e2e6278ab7885b399dcbf5eca2"
+        },
+        "index.html": {
+          "before": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/81/81af20a5e6752e9902f90492fd0d53598b73629c6fab68f3a16e8c1bda69f12b",
+          "after": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/7a/7abe1e8f45e0ee81fdf95bd4d0dd52353ac995005b8638148405d7ea8877b09b"
+        }
+      }
+    },
+    "9b54a472-f87e-4c08-88bb-0d7b9960cfa6": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1795027726116,
+      "endedAt": 1795027726116,
+      "files": {
+        "film.js": {
+          "before": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/7b/7b7fea1924cffbfe2de9ca5829476933e32959e2e6278ab7885b399dcbf5eca2",
+          "after": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/2c/2c8b57209fcf8d5f5560ed530e08ab3fa4adb3d90d2fb2a67dd54d4c97a70e67"
+        }
+      }
+    },
+    "67a72ea8-b467-4de2-9b38-fe3b8f5c0996": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1795027821860,
+      "endedAt": 1795027821861,
+      "files": {
+        "film.js": {
+          "before": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/2c/2c8b57209fcf8d5f5560ed530e08ab3fa4adb3d90d2fb2a67dd54d4c97a70e67",
+          "after": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/ba/ba9eadbbc556da6c827a73286808aafe38056dc01ee11a8b9b659af6e04b0856"
+        }
+      }
+    },
+    "dd79c85b-6cd2-4a6c-9c15-50d0e561a866": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1795028833004,
+      "endedAt": 1795028833005,
+      "files": {
+        "film.js": {
+          "before": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/ba/ba9eadbbc556da6c827a73286808aafe38056dc01ee11a8b9b659af6e04b0856",
+          "after": "/home/user/.cache/hyperframes/history/5efcbb2b-1ff7-4f5e-9803-fe4ccd0150e5/blobs/ba/ba813ba7c46c96ec030f797976226026348cd44506a4c3b1fe875b24a4660d54"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": {
+      "revision": null,
+      "id": "4ed3eaac-8e0f-4f4d-a99f-59e3a4054f0c"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "id": "4ed3eaac-8e0f-4f4d-a99f-59e3a4054f0c",
+        "scope": "project",
+        "report": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/checks/4ed3eaac-8e0f-4f4d-a99f-59e3a4054f0c.json",
+        "metadata": {
+          "ok": false,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 45000,
+            "cache": true,
+            "contrast": true,
+            "craft": true,
+            "strict": false,
+            "snapshots": false,
+            "safeZones": [
+              "tiktok",
+              "reels",
+              "shorts"
+            ],
+            "browserGpuMode": "auto",
+            "includeUnmounted": false
+          }
+        },
+        "createdAt": 1795027643902,
+        "contentHash": "9b839926df3a4264611f7628e8a7e475ef2d420a81087219c26eb4464a4fdba4",
+        "revision": null,
+        "inputFingerprint": "1b8477233303cfe550dead004a2b6d8bafccb89105ad58e7ad1fea15c7945f79",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": {
+      "revision": "9b54a472-f87e-4c08-88bb-0d7b9960cfa6",
+      "id": "9146af0c-c205-4e9a-96cb-abaf9d661300-12"
+    },
+    "revisions": {
+      "600e9d78-0996-4d23-8f5d-af12f347940f": [
+        {
+          "scope": "full",
+          "id": "eba47676-20f6-4163-b8eb-23b6d4376f95-0",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/1df5f4f8-fb0e-4010-917c-cacee399f4e4/frame-00-at-0.2s.png",
+          "time": 0.2,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027660881,
+          "contentHash": "a5689c46e38fd73f4e6d6c592f59e0e697b9abebe7da24c1a9d0be008d298d1c",
+          "revision": "600e9d78-0996-4d23-8f5d-af12f347940f",
+          "inputFingerprint": "501eeae8b04ae4ab822379d9d6d41bd0d85930168198b60f0ff7573e91ff3d13",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "eba47676-20f6-4163-b8eb-23b6d4376f95-1",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/1df5f4f8-fb0e-4010-917c-cacee399f4e4/frame-01-at-1.2s.png",
+          "time": 1.2,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027660881,
+          "contentHash": "79f26118f310ed89dbbddaf3d0f75252fec42848132b01291e4cdd98e7253a18",
+          "revision": "600e9d78-0996-4d23-8f5d-af12f347940f",
+          "inputFingerprint": "501eeae8b04ae4ab822379d9d6d41bd0d85930168198b60f0ff7573e91ff3d13",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "eba47676-20f6-4163-b8eb-23b6d4376f95-2",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/1df5f4f8-fb0e-4010-917c-cacee399f4e4/frame-02-at-2.5s.png",
+          "time": 2.5,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027660882,
+          "contentHash": "8b923a27c2ae8df36c57bf66d297777018a8396a08af6be0bb9e45e9871b2b6e",
+          "revision": "600e9d78-0996-4d23-8f5d-af12f347940f",
+          "inputFingerprint": "501eeae8b04ae4ab822379d9d6d41bd0d85930168198b60f0ff7573e91ff3d13",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "eba47676-20f6-4163-b8eb-23b6d4376f95-3",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/1df5f4f8-fb0e-4010-917c-cacee399f4e4/frame-03-at-3.6s.png",
+          "time": 3.6,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027660882,
+          "contentHash": "a86c80789c49a2e256ac2eb63e349cedf4a037d81c5b561039c901f119cf525b",
+          "revision": "600e9d78-0996-4d23-8f5d-af12f347940f",
+          "inputFingerprint": "501eeae8b04ae4ab822379d9d6d41bd0d85930168198b60f0ff7573e91ff3d13",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "eba47676-20f6-4163-b8eb-23b6d4376f95-4",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/1df5f4f8-fb0e-4010-917c-cacee399f4e4/frame-04-at-4.3s.png",
+          "time": 4.3,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027660882,
+          "contentHash": "00010f2a330ece5e2a3e993a205ad09812851fc794e275e7ead7aafdd6c268c8",
+          "revision": "600e9d78-0996-4d23-8f5d-af12f347940f",
+          "inputFingerprint": "501eeae8b04ae4ab822379d9d6d41bd0d85930168198b60f0ff7573e91ff3d13",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "eba47676-20f6-4163-b8eb-23b6d4376f95-5",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/1df5f4f8-fb0e-4010-917c-cacee399f4e4/frame-05-at-6s.png",
+          "time": 6,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027660882,
+          "contentHash": "61ea4f03fa6174fea7ad21d5922a8da749c6123d802e4299e9a89b5316a504c9",
+          "revision": "600e9d78-0996-4d23-8f5d-af12f347940f",
+          "inputFingerprint": "501eeae8b04ae4ab822379d9d6d41bd0d85930168198b60f0ff7573e91ff3d13",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "eba47676-20f6-4163-b8eb-23b6d4376f95-6",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/1df5f4f8-fb0e-4010-917c-cacee399f4e4/frame-06-at-8.2s.png",
+          "time": 8.2,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027660882,
+          "contentHash": "6fbeda759b04e6b55c216b4dd74a2036fe8ce3ec7ed6432a9296c2775a1dc3e3",
+          "revision": "600e9d78-0996-4d23-8f5d-af12f347940f",
+          "inputFingerprint": "501eeae8b04ae4ab822379d9d6d41bd0d85930168198b60f0ff7573e91ff3d13",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "eba47676-20f6-4163-b8eb-23b6d4376f95-7",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/1df5f4f8-fb0e-4010-917c-cacee399f4e4/frame-07-at-10.8s.png",
+          "time": 10.8,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027660882,
+          "contentHash": "a74fe0adde7320b7dc50f240f0ff3281339e907e8ddc935fbd3dbbfdfad1fadb",
+          "revision": "600e9d78-0996-4d23-8f5d-af12f347940f",
+          "inputFingerprint": "501eeae8b04ae4ab822379d9d6d41bd0d85930168198b60f0ff7573e91ff3d13",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "eba47676-20f6-4163-b8eb-23b6d4376f95-8",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/1df5f4f8-fb0e-4010-917c-cacee399f4e4/frame-08-at-12.8s.png",
+          "time": 12.8,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027660882,
+          "contentHash": "498af4496e27be0320dc0339af2c8a1fd5c5a68fa26f8606831b9a75f1e1c09c",
+          "revision": "600e9d78-0996-4d23-8f5d-af12f347940f",
+          "inputFingerprint": "501eeae8b04ae4ab822379d9d6d41bd0d85930168198b60f0ff7573e91ff3d13",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "eba47676-20f6-4163-b8eb-23b6d4376f95-9",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/1df5f4f8-fb0e-4010-917c-cacee399f4e4/frame-09-at-14.8s.png",
+          "time": 14.8,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027660882,
+          "contentHash": "98ad152c5469f92c1c26b0125bc470a43f0294f2a169b65f5cd8a6c8bf081915",
+          "revision": "600e9d78-0996-4d23-8f5d-af12f347940f",
+          "inputFingerprint": "501eeae8b04ae4ab822379d9d6d41bd0d85930168198b60f0ff7573e91ff3d13",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "eba47676-20f6-4163-b8eb-23b6d4376f95-10",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/1df5f4f8-fb0e-4010-917c-cacee399f4e4/frame-10-at-59.75s.png",
+          "time": 59.75,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027660882,
+          "contentHash": "b580538aa46d4d18341691a7536d0a881ca6c3e2f6656e1f81bcc1b9e0f4144d",
+          "revision": "600e9d78-0996-4d23-8f5d-af12f347940f",
+          "inputFingerprint": "501eeae8b04ae4ab822379d9d6d41bd0d85930168198b60f0ff7573e91ff3d13",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "67d53cb9-da67-4361-bd55-bfab3fe4e1e8": [
+        {
+          "scope": "full",
+          "id": "0ecb74c1-973d-4d19-80e3-de4d78268f5f-0",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/944be6e8-4792-4551-a3e0-43b1d31a9dfa/frame-00-at-2.9s.png",
+          "time": 2.9,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027710536,
+          "contentHash": "afe37170591ec0cfb54bbb2cc2212688e2dbc564f9795a55095ad4799feac0b2",
+          "revision": "67d53cb9-da67-4361-bd55-bfab3fe4e1e8",
+          "inputFingerprint": "1b14d969f05216932ab34d84d54b504daeb0558eca939296855efae1f718b381",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "0ecb74c1-973d-4d19-80e3-de4d78268f5f-1",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/944be6e8-4792-4551-a3e0-43b1d31a9dfa/frame-01-at-17.6s.png",
+          "time": 17.6,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027710536,
+          "contentHash": "1f852ae4684359f01b1ace7606422c90dcad142f0317dbc3a5eb0b3e323001af",
+          "revision": "67d53cb9-da67-4361-bd55-bfab3fe4e1e8",
+          "inputFingerprint": "1b14d969f05216932ab34d84d54b504daeb0558eca939296855efae1f718b381",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "0ecb74c1-973d-4d19-80e3-de4d78268f5f-2",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/944be6e8-4792-4551-a3e0-43b1d31a9dfa/frame-02-at-19.2s.png",
+          "time": 19.2,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027710536,
+          "contentHash": "9454385b7c75289f4b7f025b0d25ea7e41082dd83185a636a503d48e28d6afcd",
+          "revision": "67d53cb9-da67-4361-bd55-bfab3fe4e1e8",
+          "inputFingerprint": "1b14d969f05216932ab34d84d54b504daeb0558eca939296855efae1f718b381",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "0ecb74c1-973d-4d19-80e3-de4d78268f5f-3",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/944be6e8-4792-4551-a3e0-43b1d31a9dfa/frame-03-at-21.7s.png",
+          "time": 21.7,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027710536,
+          "contentHash": "bb9efa0267caf451866122df13eccec6285847a18dee3af93514d30416ae3c8c",
+          "revision": "67d53cb9-da67-4361-bd55-bfab3fe4e1e8",
+          "inputFingerprint": "1b14d969f05216932ab34d84d54b504daeb0558eca939296855efae1f718b381",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "0ecb74c1-973d-4d19-80e3-de4d78268f5f-4",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/944be6e8-4792-4551-a3e0-43b1d31a9dfa/frame-04-at-23.2s.png",
+          "time": 23.2,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027710536,
+          "contentHash": "624e8fd92c0fb186e486a607368d01240cfd6f5cc0aacb6f3b9f814dae675c13",
+          "revision": "67d53cb9-da67-4361-bd55-bfab3fe4e1e8",
+          "inputFingerprint": "1b14d969f05216932ab34d84d54b504daeb0558eca939296855efae1f718b381",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "0ecb74c1-973d-4d19-80e3-de4d78268f5f-5",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/944be6e8-4792-4551-a3e0-43b1d31a9dfa/frame-05-at-24.8s.png",
+          "time": 24.8,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027710537,
+          "contentHash": "6f77b3d1a3ebb3ee2b6507d829526e9c13cedc5c3bfa3340beb047901312eb30",
+          "revision": "67d53cb9-da67-4361-bd55-bfab3fe4e1e8",
+          "inputFingerprint": "1b14d969f05216932ab34d84d54b504daeb0558eca939296855efae1f718b381",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "0ecb74c1-973d-4d19-80e3-de4d78268f5f-6",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/944be6e8-4792-4551-a3e0-43b1d31a9dfa/frame-06-at-26.6s.png",
+          "time": 26.6,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027710537,
+          "contentHash": "6c1ff5d5c7cf06c016b073f2209b7c15d65dd0f23a3c9500f1dee28d0a571fca",
+          "revision": "67d53cb9-da67-4361-bd55-bfab3fe4e1e8",
+          "inputFingerprint": "1b14d969f05216932ab34d84d54b504daeb0558eca939296855efae1f718b381",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "0ecb74c1-973d-4d19-80e3-de4d78268f5f-7",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/944be6e8-4792-4551-a3e0-43b1d31a9dfa/frame-07-at-27.9s.png",
+          "time": 27.9,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027710537,
+          "contentHash": "45ae1e8cb84749df28cc20df14b62e72a725776c0f96a709d080d8dec9683214",
+          "revision": "67d53cb9-da67-4361-bd55-bfab3fe4e1e8",
+          "inputFingerprint": "1b14d969f05216932ab34d84d54b504daeb0558eca939296855efae1f718b381",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "0ecb74c1-973d-4d19-80e3-de4d78268f5f-8",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/944be6e8-4792-4551-a3e0-43b1d31a9dfa/frame-08-at-29.4s.png",
+          "time": 29.4,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027710537,
+          "contentHash": "1f385d5654438e9b48ad4a4f8856597bcb2fa445eda0666cf41340eeaad2b058",
+          "revision": "67d53cb9-da67-4361-bd55-bfab3fe4e1e8",
+          "inputFingerprint": "1b14d969f05216932ab34d84d54b504daeb0558eca939296855efae1f718b381",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "0ecb74c1-973d-4d19-80e3-de4d78268f5f-9",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/944be6e8-4792-4551-a3e0-43b1d31a9dfa/frame-09-at-30.6s.png",
+          "time": 30.6,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027710537,
+          "contentHash": "3ee2045ac366761039b3f89e54c24126d85f9a929591d6c205d107f3a1a84a9e",
+          "revision": "67d53cb9-da67-4361-bd55-bfab3fe4e1e8",
+          "inputFingerprint": "1b14d969f05216932ab34d84d54b504daeb0558eca939296855efae1f718b381",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "0ecb74c1-973d-4d19-80e3-de4d78268f5f-10",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/944be6e8-4792-4551-a3e0-43b1d31a9dfa/frame-10-at-59.75s.png",
+          "time": 59.75,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027710537,
+          "contentHash": "b580538aa46d4d18341691a7536d0a881ca6c3e2f6656e1f81bcc1b9e0f4144d",
+          "revision": "67d53cb9-da67-4361-bd55-bfab3fe4e1e8",
+          "inputFingerprint": "1b14d969f05216932ab34d84d54b504daeb0558eca939296855efae1f718b381",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "9b54a472-f87e-4c08-88bb-0d7b9960cfa6": [
+        {
+          "scope": "full",
+          "id": "9146af0c-c205-4e9a-96cb-abaf9d661300-0",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/aad5a8fb-2e1b-481f-a659-3697e37ec8ee/frame-00-at-22.6s.png",
+          "time": 22.6,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027740905,
+          "contentHash": "15c86fa3514ea6ab0c953ed60e1d6d8b462b8e1ec78cd2649c3f72ffb4d50fc1",
+          "revision": "9b54a472-f87e-4c08-88bb-0d7b9960cfa6",
+          "inputFingerprint": "7d243f387c1fe25bc3e22d7c954425f07aadf800e9a1551006f59ecd299d81d5",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "9146af0c-c205-4e9a-96cb-abaf9d661300-1",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/aad5a8fb-2e1b-481f-a659-3697e37ec8ee/frame-01-at-31.6s.png",
+          "time": 31.6,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027740905,
+          "contentHash": "c578e38387e56c0dc28bdbd3441805461543020c4e899408a9fc521d346aa829",
+          "revision": "9b54a472-f87e-4c08-88bb-0d7b9960cfa6",
+          "inputFingerprint": "7d243f387c1fe25bc3e22d7c954425f07aadf800e9a1551006f59ecd299d81d5",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "9146af0c-c205-4e9a-96cb-abaf9d661300-2",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/aad5a8fb-2e1b-481f-a659-3697e37ec8ee/frame-02-at-32.8s.png",
+          "time": 32.8,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027740905,
+          "contentHash": "33eb768d6d39328332347239de47d43c7c237ff7b39a851226c16263278deb09",
+          "revision": "9b54a472-f87e-4c08-88bb-0d7b9960cfa6",
+          "inputFingerprint": "7d243f387c1fe25bc3e22d7c954425f07aadf800e9a1551006f59ecd299d81d5",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "9146af0c-c205-4e9a-96cb-abaf9d661300-3",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/aad5a8fb-2e1b-481f-a659-3697e37ec8ee/frame-03-at-35.3s.png",
+          "time": 35.3,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027740905,
+          "contentHash": "2fb007fe15c07f3ebb6e4d1460d4247c4dc2cddad5625efbc350a78e18202d67",
+          "revision": "9b54a472-f87e-4c08-88bb-0d7b9960cfa6",
+          "inputFingerprint": "7d243f387c1fe25bc3e22d7c954425f07aadf800e9a1551006f59ecd299d81d5",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "9146af0c-c205-4e9a-96cb-abaf9d661300-4",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/aad5a8fb-2e1b-481f-a659-3697e37ec8ee/frame-04-at-37.6s.png",
+          "time": 37.6,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027740905,
+          "contentHash": "c109730fe5b640246ec93dbd3718d98d5979e4d9f9f09175097df8fc4e7ee215",
+          "revision": "9b54a472-f87e-4c08-88bb-0d7b9960cfa6",
+          "inputFingerprint": "7d243f387c1fe25bc3e22d7c954425f07aadf800e9a1551006f59ecd299d81d5",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "9146af0c-c205-4e9a-96cb-abaf9d661300-5",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/aad5a8fb-2e1b-481f-a659-3697e37ec8ee/frame-05-at-39.6s.png",
+          "time": 39.6,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027740905,
+          "contentHash": "c578e38387e56c0dc28bdbd3441805461543020c4e899408a9fc521d346aa829",
+          "revision": "9b54a472-f87e-4c08-88bb-0d7b9960cfa6",
+          "inputFingerprint": "7d243f387c1fe25bc3e22d7c954425f07aadf800e9a1551006f59ecd299d81d5",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "9146af0c-c205-4e9a-96cb-abaf9d661300-6",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/aad5a8fb-2e1b-481f-a659-3697e37ec8ee/frame-06-at-41.6s.png",
+          "time": 41.6,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027740905,
+          "contentHash": "ba81d127ce6df641a787b5606fdcbf69f42cff2e232cd98a1e75ce1a5ff9dda5",
+          "revision": "9b54a472-f87e-4c08-88bb-0d7b9960cfa6",
+          "inputFingerprint": "7d243f387c1fe25bc3e22d7c954425f07aadf800e9a1551006f59ecd299d81d5",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "9146af0c-c205-4e9a-96cb-abaf9d661300-7",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/aad5a8fb-2e1b-481f-a659-3697e37ec8ee/frame-07-at-43.5s.png",
+          "time": 43.5,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027740905,
+          "contentHash": "0e9f2a67c1b3d507c929614c30b20a6f85107181a9c7dd8e0e96ee3a956f47ba",
+          "revision": "9b54a472-f87e-4c08-88bb-0d7b9960cfa6",
+          "inputFingerprint": "7d243f387c1fe25bc3e22d7c954425f07aadf800e9a1551006f59ecd299d81d5",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "9146af0c-c205-4e9a-96cb-abaf9d661300-8",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/aad5a8fb-2e1b-481f-a659-3697e37ec8ee/frame-08-at-46s.png",
+          "time": 46,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027740906,
+          "contentHash": "db53feaeec35804d70b79ce093adbed4390b8bc1ab37c571a31e9c01e27564ea",
+          "revision": "9b54a472-f87e-4c08-88bb-0d7b9960cfa6",
+          "inputFingerprint": "7d243f387c1fe25bc3e22d7c954425f07aadf800e9a1551006f59ecd299d81d5",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "9146af0c-c205-4e9a-96cb-abaf9d661300-9",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/aad5a8fb-2e1b-481f-a659-3697e37ec8ee/frame-09-at-48.5s.png",
+          "time": 48.5,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027740906,
+          "contentHash": "fa33c966c56367e9c0201df4c5c9ed5bb26d7ae82b7f7a48ca7742d9d9f843e6",
+          "revision": "9b54a472-f87e-4c08-88bb-0d7b9960cfa6",
+          "inputFingerprint": "7d243f387c1fe25bc3e22d7c954425f07aadf800e9a1551006f59ecd299d81d5",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "9146af0c-c205-4e9a-96cb-abaf9d661300-10",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/aad5a8fb-2e1b-481f-a659-3697e37ec8ee/frame-10-at-50.2s.png",
+          "time": 50.2,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027740906,
+          "contentHash": "b91c91819fdc90d35012cda79fe653567a3f9c8a67d9dccbf296face1461bd6d",
+          "revision": "9b54a472-f87e-4c08-88bb-0d7b9960cfa6",
+          "inputFingerprint": "7d243f387c1fe25bc3e22d7c954425f07aadf800e9a1551006f59ecd299d81d5",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "9146af0c-c205-4e9a-96cb-abaf9d661300-11",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/aad5a8fb-2e1b-481f-a659-3697e37ec8ee/frame-11-at-51.6s.png",
+          "time": 51.6,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027740906,
+          "contentHash": "9f54a7ccc711c916080a3b915e9c301e730b68843c49ad398172ebceece1e605",
+          "revision": "9b54a472-f87e-4c08-88bb-0d7b9960cfa6",
+          "inputFingerprint": "7d243f387c1fe25bc3e22d7c954425f07aadf800e9a1551006f59ecd299d81d5",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "9146af0c-c205-4e9a-96cb-abaf9d661300-12",
+          "image": "/home/user/sandbox/talabat-egypt-film/compositions/talabat-orange-frequency/.hyperframes/artifacts/snapshots/aad5a8fb-2e1b-481f-a659-3697e37ec8ee/frame-12-at-59.75s.png",
+          "time": 59.75,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795027740906,
+          "contentHash": "b580538aa46d4d18341691a7536d0a881ca6c3e2f6656e1f81bcc1b9e0f4144d",
+          "revision": "9b54a472-f87e-4c08-88bb-0d7b9960cfa6",
+          "inputFingerprint": "7d243f387c1fe25bc3e22d7c954425f07aadf800e9a1551006f59ecd299d81d5",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": []
+  }
+}
